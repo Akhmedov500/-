@@ -119,6 +119,8 @@ async def inline_search(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     id=str(movie_id),
                     photo_url=poster,
                     thumbnail_url=poster,
+                    title=f"{title} ({year})",
+                    description=f"⭐ {rating}
                     caption=text,
                     parse_mode="Markdown"
                 )

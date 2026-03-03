@@ -145,7 +145,5 @@ app.add_handler(CommandHandler("top", top))
 app.add_handler(CallbackQueryHandler(button))
 app.add_handler(InlineQueryHandler(inline_search))
 
-#from telegram import InlineQueryResultArticle, InlineQueryResultPhoto, InputTextMessageContent
-
 print("Бот запущен...")
 app.run_polling()

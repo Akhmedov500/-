@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandle
 
 TMDB_API_KEY = "5964ad98001f8a9d599fbd007eaea99b"
 TELEGRAM_TOKEN = "8785802756:AAG1OXthghXaRkqLrkNqhDcVt8Q62oTbn_I"
-
+#
 
 def get_movies(endpoint, pages=1):
     movies = []

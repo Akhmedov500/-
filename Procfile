@@ -1,1 +1,1 @@
-worker: python tmdb2.py
+worker: python test3.py

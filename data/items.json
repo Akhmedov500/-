@@ -1,0 +1,71 @@
+{
+  "weapons": {
+    "rusty_cutlass": {"name": "Ржавая сабля", "type": "weapon", "rarity": "common", "attack": 5, "price": 50, "level_req": 1, "description": "Старая сабля, но всё ещё острая."},
+    "iron_cutlass": {"name": "Железная сабля", "type": "weapon", "rarity": "common", "attack": 10, "price": 200, "level_req": 5, "description": "Надёжная железная сабля."},
+    "steel_rapier": {"name": "Стальная рапира", "type": "weapon", "rarity": "uncommon", "attack": 18, "price": 500, "level_req": 10, "description": "Лёгкая и смертоносная рапира."},
+    "pirates_sabre": {"name": "Пиратская сабля", "type": "weapon", "rarity": "uncommon", "attack": 25, "price": 1000, "level_req": 15, "description": "Излюбленное оружие пиратов."},
+    "golden_blade": {"name": "Золотой клинок", "type": "weapon", "rarity": "rare", "attack": 35, "price": 2500, "level_req": 25, "description": "Клинок, выкованный из зачарованного золота."},
+    "shadow_dagger": {"name": "Кинжал Тени", "type": "weapon", "rarity": "rare", "attack": 30, "price": 2000, "level_req": 20, "description": "Невидимый удар из тьмы."},
+    "kraken_fang": {"name": "Клык Кракена", "type": "weapon", "rarity": "epic", "attack": 50, "price": 5000, "level_req": 35, "description": "Выточен из клыка морского чудовища."},
+    "stormbringer": {"name": "Штормовержец", "type": "weapon", "rarity": "epic", "attack": 60, "price": 8000, "level_req": 45, "description": "Меч, несущий бурю."},
+    "blade_of_the_deep": {"name": "Клинок Глубин", "type": "weapon", "rarity": "legendary", "attack": 80, "price": 15000, "level_req": 60, "description": "Легендарное оружие из бездны."},
+    "poseidons_trident": {"name": "Трезубец Посейдона", "type": "weapon", "rarity": "legendary", "attack": 100, "price": 30000, "level_req": 80, "description": "Оружие самого бога морей."},
+    "flintlock_pistol": {"name": "Кремнёвый пистолет", "type": "weapon", "rarity": "common", "attack": 12, "price": 300, "level_req": 5, "description": "Один выстрел — один враг."},
+    "dual_pistols": {"name": "Парные пистолеты", "type": "weapon", "rarity": "uncommon", "attack": 22, "price": 800, "level_req": 12, "description": "Два ствола лучше одного."},
+    "blunderbuss": {"name": "Мушкетон", "type": "weapon", "rarity": "rare", "attack": 40, "price": 3000, "level_req": 30, "description": "Сметает всё на своём пути."},
+    "cannon_hand": {"name": "Пушка-рука", "type": "weapon", "rarity": "epic", "attack": 55, "price": 7000, "level_req": 40, "description": "Заменяет руку на мини-пушку."}
+  },
+  "armor": {
+    "torn_shirt": {"name": "Рваная рубаха", "type": "armor", "rarity": "common", "defense": 3, "price": 30, "level_req": 1, "description": "Лучше, чем ничего."},
+    "leather_vest": {"name": "Кожаный жилет", "type": "armor", "rarity": "common", "defense": 8, "price": 150, "level_req": 5, "description": "Простая защита."},
+    "chainmail": {"name": "Кольчуга", "type": "armor", "rarity": "uncommon", "defense": 15, "price": 500, "level_req": 10, "description": "Кольца стали звенят в бою."},
+    "captains_coat": {"name": "Капитанский камзол", "type": "armor", "rarity": "uncommon", "defense": 22, "price": 1200, "level_req": 18, "description": "Стильно и практично."},
+    "sea_dragon_armor": {"name": "Доспех Морского Дракона", "type": "armor", "rarity": "rare", "defense": 35, "price": 3000, "level_req": 28, "description": "Из чешуи морского дракона."},
+    "ghost_plate": {"name": "Призрачная броня", "type": "armor", "rarity": "epic", "defense": 50, "price": 6000, "level_req": 40, "description": "Полупрозрачная, но невероятно прочная."},
+    "abyssal_aegis": {"name": "Щит Бездны", "type": "armor", "rarity": "legendary", "defense": 70, "price": 15000, "level_req": 60, "description": "Создан из тьмы морской бездны."},
+    "pirate_hat": {"name": "Пиратская шляпа", "type": "armor", "rarity": "common", "defense": 2, "price": 100, "level_req": 1, "description": "Классика жанра."},
+    "tricorne": {"name": "Треуголка", "type": "armor", "rarity": "uncommon", "defense": 5, "price": 300, "level_req": 8, "description": "Элегантная капитанская шляпа."}
+  },
+  "consumables": {
+    "health_potion_s": {"name": "Малое зелье здоровья", "type": "consumable", "rarity": "common", "heal": 30, "price": 25, "description": "Восстанавливает 30 HP."},
+    "health_potion_m": {"name": "Среднее зелье здоровья", "type": "consumable", "rarity": "uncommon", "heal": 70, "price": 80, "description": "Восстанавливает 70 HP."},
+    "health_potion_l": {"name": "Большое зелье здоровья", "type": "consumable", "rarity": "rare", "heal": 150, "price": 200, "description": "Восстанавливает 150 HP."},
+    "energy_drink": {"name": "Ром бодрости", "type": "consumable", "rarity": "common", "energy": 20, "price": 50, "description": "Восстанавливает 20 энергии."},
+    "full_restore": {"name": "Эликсир полного восстановления", "type": "consumable", "rarity": "epic", "heal": 9999, "energy": 9999, "price": 1000, "description": "Полностью восстанавливает HP и энергию."},
+    "attack_buff": {"name": "Зелье ярости", "type": "consumable", "rarity": "uncommon", "buff": {"attack": 10, "duration": 3}, "price": 150, "description": "+10 к атаке на 3 боя."},
+    "defense_buff": {"name": "Зелье стойкости", "type": "consumable", "rarity": "uncommon", "buff": {"defense": 10, "duration": 3}, "price": 150, "description": "+10 к защите на 3 боя."},
+    "speed_buff": {"name": "Зелье ветра", "type": "consumable", "rarity": "uncommon", "buff": {"speed": 10, "duration": 3}, "price": 150, "description": "+10 к скорости на 3 боя."},
+    "luck_charm": {"name": "Амулет удачи", "type": "consumable", "rarity": "rare", "buff": {"luck": 15, "duration": 5}, "price": 300, "description": "+15 к удаче на 5 боёв."},
+    "xp_boost": {"name": "Свиток опыта", "type": "consumable", "rarity": "rare", "buff": {"xp_mult": 1.5, "duration": 10}, "price": 500, "description": "x1.5 к опыту на 10 боёв."}
+  },
+  "materials": {
+    "wood": {"name": "Древесина", "type": "material", "rarity": "common", "price": 10, "description": "Основной строительный материал."},
+    "iron_ore": {"name": "Железная руда", "type": "material", "rarity": "common", "price": 15, "description": "Необработанное железо."},
+    "iron_ingot": {"name": "Железный слиток", "type": "material", "rarity": "common", "price": 30, "description": "Обработанное железо."},
+    "gold_ore": {"name": "Золотая руда", "type": "material", "rarity": "uncommon", "price": 50, "description": "Блестящая золотая руда."},
+    "gold_ingot": {"name": "Золотой слиток", "type": "material", "rarity": "uncommon", "price": 100, "description": "Чистое золото."},
+    "silk": {"name": "Шёлк", "type": "material", "rarity": "uncommon", "price": 40, "description": "Тонкая и прочная ткань."},
+    "leather": {"name": "Кожа", "type": "material", "rarity": "common", "price": 20, "description": "Выделанная кожа."},
+    "gunpowder": {"name": "Порох", "type": "material", "rarity": "common", "price": 25, "description": "Для пушек и мушкетов."},
+    "magic_crystal": {"name": "Магический кристалл", "type": "material", "rarity": "rare", "price": 200, "description": "Светится таинственным светом."},
+    "kraken_ink": {"name": "Чернила кракена", "type": "material", "rarity": "epic", "price": 500, "description": "Добыты у кракена."},
+    "ghost_essence": {"name": "Эссенция призрака", "type": "material", "rarity": "epic", "price": 400, "description": "Собрана с побеждённых призраков."},
+    "dragon_scale": {"name": "Чешуя дракона", "type": "material", "rarity": "legendary", "price": 1000, "description": "Невероятно прочная и красивая."},
+    "pearl": {"name": "Жемчужина", "type": "material", "rarity": "uncommon", "price": 80, "description": "Найдена на морском дне."},
+    "black_pearl": {"name": "Чёрная жемчужина", "type": "material", "rarity": "legendary", "price": 2000, "description": "Легендарная чёрная жемчужина."},
+    "cloth": {"name": "Ткань", "type": "material", "rarity": "common", "price": 12, "description": "Обычная ткань для парусов."},
+    "rope": {"name": "Верёвка", "type": "material", "rarity": "common", "price": 8, "description": "Прочная морская верёвка."},
+    "herbs": {"name": "Травы", "type": "material", "rarity": "common", "price": 15, "description": "Лечебные травы."},
+    "rare_herbs": {"name": "Редкие травы", "type": "material", "rarity": "rare", "price": 100, "description": "Растут только в особых местах."},
+    "coral": {"name": "Коралл", "type": "material", "rarity": "uncommon", "price": 60, "description": "Красивый морской коралл."},
+    "obsidian": {"name": "Обсидиан", "type": "material", "rarity": "rare", "price": 150, "description": "Вулканическое стекло."}
+  },
+  "special": {
+    "treasure_map": {"name": "Карта сокровищ", "type": "special", "rarity": "rare", "price": 500, "description": "Ведёт к скрытому кладу."},
+    "compass": {"name": "Магический компас", "type": "special", "rarity": "epic", "price": 2000, "description": "Указывает на ближайшее сокровище."},
+    "skeleton_key": {"name": "Скелетный ключ", "type": "special", "rarity": "rare", "price": 300, "description": "Открывает любой сундук."},
+    "spyglass": {"name": "Подзорная труба", "type": "special", "rarity": "uncommon", "price": 400, "description": "Позволяет видеть дальше."},
+    "ancient_coin": {"name": "Древняя монета", "type": "special", "rarity": "legendary", "price": 5000, "description": "Монета из затонувшей цивилизации."},
+    "cursed_medallion": {"name": "Проклятый медальон", "type": "special", "rarity": "legendary", "price": 0, "description": "Снять проклятие — или нести его вечно."}
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "world_events": [
+    {
+      "id": "kraken_awakening",
+      "name": "Пробуждение Кракена",
+      "description": "Кракен пробуждается из глубин! Все моря становятся опасными.",
+      "type": "seasonal",
+      "duration_hours": 72,
+      "effects": {"monster_strength": 1.5, "loot_bonus": 2.0, "special_boss": "ancient_kraken"},
+      "rewards": {"gold": 5000, "xp": 3000, "items": ["kraken_fang"]},
+      "min_level": 20
+    },
+    {
+      "id": "ghost_fleet",
+      "name": "Призрачный Флот",
+      "description": "Флот призрачных кораблей появляется в тумане. Победите их для особых наград!",
+      "type": "weekly",
+      "duration_hours": 24,
+      "effects": {"ghost_ships_spawn": true, "ghost_loot_bonus": 1.5},
+      "rewards": {"gold": 2000, "xp": 1000, "items": ["ghost_essence"]},
+      "min_level": 15
+    },
+    {
+      "id": "treasure_festival",
+      "name": "Фестиваль Сокровищ",
+      "description": "На всех островах появляются скрытые сундуки с сокровищами!",
+      "type": "weekly",
+      "duration_hours": 48,
+      "effects": {"treasure_spawn_rate": 3.0, "gold_bonus": 1.5},
+      "rewards": {"gold": 1000, "xp": 500},
+      "min_level": 1
+    },
+    {
+      "id": "storm_season",
+      "name": "Сезон Штормов",
+      "description": "Мощные шторма бушуют по всему морю. Навигация опасна, но награды удвоены.",
+      "type": "seasonal",
+      "duration_hours": 168,
+      "effects": {"storm_chance": 0.8, "xp_bonus": 2.0, "ship_damage_rate": 1.5},
+      "rewards": {"gold": 3000, "xp": 2000},
+      "min_level": 10
+    },
+    {
+      "id": "merchant_fair",
+      "name": "Торговая Ярмарка",
+      "description": "Торговая Гильдия проводит грандиозную ярмарку! Скидки на всё!",
+      "type": "weekly",
+      "duration_hours": 24,
+      "effects": {"buy_discount": 0.3, "sell_bonus": 0.2, "special_items_available": true},
+      "rewards": {"gold": 500, "xp": 200},
+      "min_level": 1
+    },
+    {
+      "id": "pvp_tournament",
+      "name": "Турнир PVP",
+      "description": "Грандиозный турнир! Сражайтесь за звание чемпиона и невероятные награды!",
+      "type": "weekly",
+      "duration_hours": 48,
+      "effects": {"pvp_xp_bonus": 2.0, "pvp_gold_bonus": 1.5, "tournament_mode": true},
+      "rewards": {"gold": 5000, "xp": 3000, "items": ["stormbringer"]},
+      "min_level": 10
+    },
+    {
+      "id": "dragon_invasion",
+      "name": "Нашествие Драконов",
+      "description": "Морские драконы атакуют! Защитите острова для легендарных наград!",
+      "type": "seasonal",
+      "duration_hours": 72,
+      "effects": {"dragon_spawns": true, "dragon_loot_bonus": 2.0},
+      "rewards": {"gold": 8000, "xp": 5000, "items": ["blade_of_the_deep"]},
+      "min_level": 30
+    },
+    {
+      "id": "full_moon",
+      "name": "Полнолуние",
+      "description": "Под полной луной монстры становятся сильнее, но и награды растут.",
+      "type": "daily",
+      "duration_hours": 12,
+      "effects": {"monster_strength": 1.3, "xp_bonus": 1.5, "rare_drop_bonus": 1.3},
+      "rewards": {"gold": 200, "xp": 100},
+      "min_level": 1
+    },
+    {
+      "id": "guild_war_season",
+      "name": "Сезон Гильдейских Войн",
+      "description": "Гильдии сражаются за территории! Примите участие в войне!",
+      "type": "seasonal",
+      "duration_hours": 168,
+      "effects": {"guild_war_mode": true, "territory_rewards": 2.0},
+      "rewards": {"gold": 10000, "xp": 5000},
+      "min_level": 15
+    },
+    {
+      "id": "sunken_city",
+      "name": "Затонувший Город",
+      "description": "Древний город поднимается из глубин на 24 часа! Исследуйте его тайны!",
+      "type": "rare",
+      "duration_hours": 24,
+      "effects": {"special_dungeon": true, "ancient_loot": true},
+      "rewards": {"gold": 5000, "xp": 3000, "items": ["ancient_coin"]},
+      "min_level": 25
+    }
+  ]
+}

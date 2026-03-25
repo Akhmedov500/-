@@ -1,0 +1,53 @@
+{
+  "combat": {
+    "power_strike": {"name": "Мощный удар", "type": "active", "description": "Наносит 150% урона", "cost": 10, "cooldown": 2, "damage_mult": 1.5, "max_level": 5, "level_req": 1, "tree": "combat"},
+    "double_slash": {"name": "Двойной разрез", "type": "active", "description": "Два быстрых удара по 80% урона", "cost": 15, "cooldown": 3, "damage_mult": 0.8, "hits": 2, "max_level": 5, "level_req": 5, "tree": "combat"},
+    "whirlwind": {"name": "Вихрь клинков", "type": "active", "description": "Атакует всех врагов за 70% урона", "cost": 25, "cooldown": 5, "damage_mult": 0.7, "aoe": true, "max_level": 5, "level_req": 15, "tree": "combat"},
+    "berserk": {"name": "Берсерк", "type": "active", "description": "+30% атаки, -15% защиты на 3 хода", "cost": 20, "cooldown": 6, "buff": {"attack_pct": 0.3, "defense_pct": -0.15, "duration": 3}, "max_level": 3, "level_req": 10, "tree": "combat"},
+    "execute": {"name": "Казнь", "type": "active", "description": "200% урона по врагам с <25% HP", "cost": 30, "cooldown": 4, "damage_mult": 2.0, "condition": "target_hp_below_25", "max_level": 5, "level_req": 25, "tree": "combat"},
+    "blade_mastery": {"name": "Мастерство клинка", "type": "passive", "description": "+3% к урону за уровень", "bonus_per_level": {"attack_pct": 0.03}, "max_level": 10, "level_req": 1, "tree": "combat"},
+    "critical_eye": {"name": "Критический глаз", "type": "passive", "description": "+2% шанс крита за уровень", "bonus_per_level": {"crit_chance": 0.02}, "max_level": 10, "level_req": 5, "tree": "combat"},
+    "bloodlust": {"name": "Жажда крови", "type": "passive", "description": "Восстанавливает 5% HP за убийство", "bonus_per_level": {"lifesteal_on_kill": 0.05}, "max_level": 5, "level_req": 15, "tree": "combat"},
+    "intimidate": {"name": "Запугивание", "type": "active", "description": "Снижает атаку врага на 20%", "cost": 15, "cooldown": 4, "debuff": {"attack_pct": -0.2, "duration": 2}, "max_level": 3, "level_req": 8, "tree": "combat"},
+    "last_stand": {"name": "Последний рубеж", "type": "passive", "description": "+50% урона при <20% HP", "bonus_per_level": {"low_hp_damage": 0.5}, "max_level": 3, "level_req": 30, "tree": "combat"}
+  },
+  "defense": {
+    "iron_skin": {"name": "Железная кожа", "type": "passive", "description": "+3% к защите за уровень", "bonus_per_level": {"defense_pct": 0.03}, "max_level": 10, "level_req": 1, "tree": "defense"},
+    "shield_block": {"name": "Блок щитом", "type": "active", "description": "Блокирует 50% урона на 1 ход", "cost": 10, "cooldown": 3, "block_pct": 0.5, "max_level": 5, "level_req": 3, "tree": "defense"},
+    "fortify": {"name": "Укрепление", "type": "active", "description": "+40% защиты на 3 хода", "cost": 20, "cooldown": 5, "buff": {"defense_pct": 0.4, "duration": 3}, "max_level": 5, "level_req": 10, "tree": "defense"},
+    "parry": {"name": "Парирование", "type": "passive", "description": "10% шанс полностью избежать урона", "bonus_per_level": {"dodge_chance": 0.02}, "max_level": 5, "level_req": 8, "tree": "defense"},
+    "counter_attack": {"name": "Контратака", "type": "passive", "description": "30% шанс нанести ответный удар", "bonus_per_level": {"counter_chance": 0.06}, "max_level": 5, "level_req": 15, "tree": "defense"},
+    "second_wind": {"name": "Второе дыхание", "type": "active", "description": "Восстанавливает 30% HP", "cost": 30, "cooldown": 8, "heal_pct": 0.3, "max_level": 5, "level_req": 12, "tree": "defense"},
+    "unyielding": {"name": "Несгибаемый", "type": "passive", "description": "Снижает урон на 5% за уровень при <30% HP", "bonus_per_level": {"low_hp_reduction": 0.05}, "max_level": 5, "level_req": 20, "tree": "defense"},
+    "taunt": {"name": "Провокация", "type": "active", "description": "Заставляет врага атаковать вас", "cost": 10, "cooldown": 3, "max_level": 3, "level_req": 5, "tree": "defense"}
+  },
+  "sailing": {
+    "swift_sails": {"name": "Быстрые паруса", "type": "passive", "description": "+5% скорости корабля за уровень", "bonus_per_level": {"ship_speed_pct": 0.05}, "max_level": 10, "level_req": 1, "tree": "sailing"},
+    "cannon_expert": {"name": "Эксперт канониров", "type": "passive", "description": "+5% урона пушек за уровень", "bonus_per_level": {"cannon_damage_pct": 0.05}, "max_level": 10, "level_req": 5, "tree": "sailing"},
+    "broadside": {"name": "Бортовой залп", "type": "active", "description": "200% урона пушками, кулдаун 5 ходов", "cost": 30, "cooldown": 5, "damage_mult": 2.0, "max_level": 5, "level_req": 10, "tree": "sailing"},
+    "evasive_maneuver": {"name": "Манёвр уклонения", "type": "active", "description": "70% шанс избежать следующей атаки", "cost": 20, "cooldown": 4, "dodge_chance": 0.7, "max_level": 3, "level_req": 8, "tree": "sailing"},
+    "repair_crew": {"name": "Ремонтная команда", "type": "active", "description": "Восстанавливает 20% прочности корабля", "cost": 25, "cooldown": 6, "repair_pct": 0.2, "max_level": 5, "level_req": 12, "tree": "sailing"},
+    "ramming_speed": {"name": "Таранная скорость", "type": "active", "description": "Таранит вражеский корабль за 180% урона", "cost": 35, "cooldown": 6, "damage_mult": 1.8, "max_level": 5, "level_req": 20, "tree": "sailing"},
+    "hull_reinforcement": {"name": "Укрепление корпуса", "type": "passive", "description": "+5% HP корабля за уровень", "bonus_per_level": {"hull_hp_pct": 0.05}, "max_level": 10, "level_req": 3, "tree": "sailing"},
+    "navigator": {"name": "Навигатор", "type": "passive", "description": "Снижает стоимость перемещения на 10%", "bonus_per_level": {"travel_cost_reduction": 0.1}, "max_level": 5, "level_req": 5, "tree": "sailing"},
+    "flagship_command": {"name": "Флагманское командование", "type": "passive", "description": "+1 к макс. кораблям во флоте", "bonus_per_level": {"fleet_size": 1}, "max_level": 3, "level_req": 25, "tree": "sailing"}
+  },
+  "trade": {
+    "haggler": {"name": "Торгаш", "type": "passive", "description": "-3% к ценам покупки за уровень", "bonus_per_level": {"buy_discount": 0.03}, "max_level": 10, "level_req": 1, "tree": "trade"},
+    "appraiser": {"name": "Оценщик", "type": "passive", "description": "+3% к ценам продажи за уровень", "bonus_per_level": {"sell_bonus": 0.03}, "max_level": 10, "level_req": 1, "tree": "trade"},
+    "smuggler": {"name": "Контрабандист", "type": "passive", "description": "-5% риска контрабанды за уровень", "bonus_per_level": {"smuggle_risk_reduction": 0.05}, "max_level": 5, "level_req": 10, "tree": "trade"},
+    "treasure_sense": {"name": "Чутьё на сокровища", "type": "passive", "description": "+5% шанс найти редкий лут", "bonus_per_level": {"rare_loot_chance": 0.05}, "max_level": 5, "level_req": 8, "tree": "trade"},
+    "merchant_network": {"name": "Торговая сеть", "type": "passive", "description": "Открывает доступ к особым товарам", "bonus_per_level": {"special_goods": true}, "max_level": 3, "level_req": 15, "tree": "trade"},
+    "cargo_master": {"name": "Мастер груза", "type": "passive", "description": "+10 к грузоподъёмности за уровень", "bonus_per_level": {"cargo_bonus": 10}, "max_level": 5, "level_req": 5, "tree": "trade"},
+    "market_insight": {"name": "Рыночное чутьё", "type": "active", "description": "Показывает лучшие торговые маршруты", "cost": 10, "cooldown": 10, "max_level": 3, "level_req": 12, "tree": "trade"}
+  },
+  "survival": {
+    "herbalism": {"name": "Травничество", "type": "passive", "description": "+10% эффективности зелий", "bonus_per_level": {"potion_effectiveness": 0.1}, "max_level": 5, "level_req": 1, "tree": "survival"},
+    "fishing": {"name": "Рыболовство", "type": "passive", "description": "Позволяет ловить рыбу и находить предметы", "bonus_per_level": {"fishing_bonus": 0.1}, "max_level": 5, "level_req": 3, "tree": "survival"},
+    "foraging": {"name": "Собирательство", "type": "passive", "description": "+1 к ресурсам при сборе за уровень", "bonus_per_level": {"gather_bonus": 1}, "max_level": 5, "level_req": 1, "tree": "survival"},
+    "cartography": {"name": "Картография", "type": "passive", "description": "Открывает скрытые острова", "bonus_per_level": {"hidden_islands": true}, "max_level": 3, "level_req": 10, "tree": "survival"},
+    "weather_reading": {"name": "Чтение погоды", "type": "passive", "description": "Уменьшает штрафы от плохой погоды", "bonus_per_level": {"weather_resistance": 0.15}, "max_level": 3, "level_req": 8, "tree": "survival"},
+    "endurance": {"name": "Выносливость", "type": "passive", "description": "+5 к макс. энергии за уровень", "bonus_per_level": {"max_energy": 5}, "max_level": 10, "level_req": 1, "tree": "survival"},
+    "fast_recovery": {"name": "Быстрое восстановление", "type": "passive", "description": "Энергия восстанавливается на 10% быстрее", "bonus_per_level": {"energy_regen_bonus": 0.1}, "max_level": 5, "level_req": 5, "tree": "survival"}
+  }
+}

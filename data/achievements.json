@@ -1,0 +1,51 @@
+{
+  "exploration": {
+    "first_steps": {"name": "Первые шаги", "description": "Посетите 5 островов", "requirement": {"type": "islands_visited", "count": 5}, "reward": {"gold": 100, "xp": 50}, "emoji": "🏝️"},
+    "island_hopper": {"name": "Островной прыгун", "description": "Посетите 25 островов", "requirement": {"type": "islands_visited", "count": 25}, "reward": {"gold": 500, "xp": 200}, "emoji": "🗺️"},
+    "world_explorer": {"name": "Исследователь мира", "description": "Посетите 100 островов", "requirement": {"type": "islands_visited", "count": 100}, "reward": {"gold": 2000, "xp": 1000, "item": "spyglass"}, "emoji": "🌍"},
+    "cartographer": {"name": "Картограф", "description": "Посетите все 500 островов", "requirement": {"type": "islands_visited", "count": 500}, "reward": {"gold": 10000, "xp": 5000, "item": "compass"}, "emoji": "📜"}
+  },
+  "combat": {
+    "first_blood": {"name": "Первая кровь", "description": "Победите первого монстра", "requirement": {"type": "monsters_killed", "count": 1}, "reward": {"gold": 50, "xp": 25}, "emoji": "⚔️"},
+    "monster_hunter": {"name": "Охотник на монстров", "description": "Победите 50 монстров", "requirement": {"type": "monsters_killed", "count": 50}, "reward": {"gold": 300, "xp": 200}, "emoji": "🗡️"},
+    "slayer": {"name": "Истребитель", "description": "Победите 500 монстров", "requirement": {"type": "monsters_killed", "count": 500}, "reward": {"gold": 2000, "xp": 1000}, "emoji": "💀"},
+    "legend_slayer": {"name": "Убийца легенд", "description": "Победите 5000 монстров", "requirement": {"type": "monsters_killed", "count": 5000}, "reward": {"gold": 10000, "xp": 5000, "item": "kraken_fang"}, "emoji": "🏆"},
+    "pvp_initiate": {"name": "PVP новичок", "description": "Выиграйте первый PVP-бой", "requirement": {"type": "pvp_wins", "count": 1}, "reward": {"gold": 100, "xp": 50}, "emoji": "🥊"},
+    "pvp_veteran": {"name": "PVP ветеран", "description": "Выиграйте 50 PVP-боёв", "requirement": {"type": "pvp_wins", "count": 50}, "reward": {"gold": 2000, "xp": 1000}, "emoji": "🏅"},
+    "pvp_champion": {"name": "Чемпион PVP", "description": "Выиграйте 200 PVP-боёв", "requirement": {"type": "pvp_wins", "count": 200}, "reward": {"gold": 5000, "xp": 3000, "item": "stormbringer"}, "emoji": "👑"},
+    "boss_hunter": {"name": "Охотник на боссов", "description": "Победите 10 боссов", "requirement": {"type": "bosses_killed", "count": 10}, "reward": {"gold": 3000, "xp": 1500}, "emoji": "🐲"}
+  },
+  "economy": {
+    "first_trade": {"name": "Первая сделка", "description": "Совершите первую торговлю", "requirement": {"type": "trades_completed", "count": 1}, "reward": {"gold": 50, "xp": 25}, "emoji": "🤝"},
+    "merchant": {"name": "Торговец", "description": "Совершите 50 сделок", "requirement": {"type": "trades_completed", "count": 50}, "reward": {"gold": 1000, "xp": 500}, "emoji": "💰"},
+    "tycoon": {"name": "Магнат", "description": "Накопите 100000 золота", "requirement": {"type": "total_gold", "count": 100000}, "reward": {"xp": 2000}, "emoji": "💎"},
+    "crafter": {"name": "Ремесленник", "description": "Создайте 20 предметов", "requirement": {"type": "items_crafted", "count": 20}, "reward": {"gold": 500, "xp": 200}, "emoji": "🔨"},
+    "master_crafter": {"name": "Мастер-ремесленник", "description": "Создайте 200 предметов", "requirement": {"type": "items_crafted", "count": 200}, "reward": {"gold": 3000, "xp": 1500}, "emoji": "⚒️"},
+    "smuggler_king": {"name": "Король контрабанды", "description": "Успешно доставьте 50 контрабандных грузов", "requirement": {"type": "smuggling_success", "count": 50}, "reward": {"gold": 5000, "xp": 2000}, "emoji": "🚫"}
+  },
+  "quests": {
+    "quest_starter": {"name": "Начало пути", "description": "Завершите первый квест", "requirement": {"type": "quests_completed", "count": 1}, "reward": {"gold": 50, "xp": 25}, "emoji": "📋"},
+    "adventurer": {"name": "Искатель приключений", "description": "Завершите 25 квестов", "requirement": {"type": "quests_completed", "count": 25}, "reward": {"gold": 500, "xp": 300}, "emoji": "🏔️"},
+    "quest_master": {"name": "Мастер квестов", "description": "Завершите 100 квестов", "requirement": {"type": "quests_completed", "count": 100}, "reward": {"gold": 3000, "xp": 1500}, "emoji": "📖"},
+    "story_complete": {"name": "Конец истории", "description": "Завершите основную сюжетную линию", "requirement": {"type": "story_chapter", "count": 50}, "reward": {"gold": 10000, "xp": 5000, "item": "blade_of_the_deep"}, "emoji": "📕"},
+    "daily_devotee": {"name": "Преданный", "description": "Выполните 30 ежедневных заданий", "requirement": {"type": "daily_quests_completed", "count": 30}, "reward": {"gold": 1000, "xp": 500}, "emoji": "📅"}
+  },
+  "social": {
+    "guild_founder": {"name": "Основатель гильдии", "description": "Создайте гильдию", "requirement": {"type": "guild_created", "count": 1}, "reward": {"gold": 500, "xp": 200}, "emoji": "🏰"},
+    "guild_warrior": {"name": "Гильдейский воин", "description": "Участвуйте в 10 гильдейских войнах", "requirement": {"type": "guild_wars", "count": 10}, "reward": {"gold": 2000, "xp": 1000}, "emoji": "⚔️"},
+    "diplomat": {"name": "Дипломат", "description": "Заключите 5 альянсов", "requirement": {"type": "alliances_formed", "count": 5}, "reward": {"gold": 1500, "xp": 800}, "emoji": "🤝"},
+    "mailman": {"name": "Почтальон", "description": "Отправьте 50 писем", "requirement": {"type": "mail_sent", "count": 50}, "reward": {"gold": 300, "xp": 150}, "emoji": "✉️"}
+  },
+  "ship": {
+    "ship_owner": {"name": "Судовладелец", "description": "Приобретите второй корабль", "requirement": {"type": "ships_owned", "count": 2}, "reward": {"gold": 300, "xp": 150}, "emoji": "⛵"},
+    "fleet_admiral": {"name": "Адмирал флота", "description": "Соберите флот из 5 кораблей", "requirement": {"type": "ships_owned", "count": 5}, "reward": {"gold": 5000, "xp": 2000}, "emoji": "🚢"},
+    "ship_upgrader": {"name": "Модернизатор", "description": "Улучшите корабль 10 раз", "requirement": {"type": "ship_upgrades", "count": 10}, "reward": {"gold": 1000, "xp": 500}, "emoji": "🔧"}
+  },
+  "leveling": {
+    "level_10": {"name": "Бывалый моряк", "description": "Достигните 10 уровня", "requirement": {"type": "level", "count": 10}, "reward": {"gold": 500, "xp": 0}, "emoji": "⭐"},
+    "level_25": {"name": "Опытный пират", "description": "Достигните 25 уровня", "requirement": {"type": "level", "count": 25}, "reward": {"gold": 1500, "xp": 0}, "emoji": "⭐⭐"},
+    "level_50": {"name": "Морской волк", "description": "Достигните 50 уровня", "requirement": {"type": "level", "count": 50}, "reward": {"gold": 5000, "xp": 0, "item": "golden_blade"}, "emoji": "⭐⭐⭐"},
+    "level_75": {"name": "Легенда морей", "description": "Достигните 75 уровня", "requirement": {"type": "level", "count": 75}, "reward": {"gold": 10000, "xp": 0}, "emoji": "🌟"},
+    "max_level": {"name": "Бог морей", "description": "Достигните 100 уровня", "requirement": {"type": "level", "count": 100}, "reward": {"gold": 50000, "xp": 0, "item": "poseidons_trident"}, "emoji": "👑"}
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "main_story": [
+    {
+      "chapter": 1,
+      "title": "Начало пути",
+      "description": "Вы просыпаетесь на берегу Порт-Ройала без памяти. Единственная зацепка — странный медальон на шее.",
+      "objectives": [{"type": "talk_to", "target": "governor_williams", "description": "Поговорить с губернатором"}],
+      "rewards": {"gold": 100, "xp": 50, "items": ["rusty_cutlass"]},
+      "next_chapter": 2
+    },
+    {
+      "chapter": 2,
+      "title": "Первый корабль",
+      "description": "Губернатор предложил вам старый шлюп в обмен на услугу — очистить Коралловую Бухту от разбойников.",
+      "objectives": [
+        {"type": "kill", "target": "aggressive_fish", "count": 5, "description": "Победить 5 агрессивных рыб"},
+        {"type": "visit", "target": "coral_bay", "description": "Отправиться в Коралловую Бухту"}
+      ],
+      "rewards": {"gold": 200, "xp": 100, "ship": "sloop"},
+      "next_chapter": 3
+    },
+    {
+      "chapter": 3,
+      "title": "Тайна медальона",
+      "description": "Гадалка Зара на Тортуге может рассказать о вашем медальоне.",
+      "objectives": [
+        {"type": "visit", "target": "tortuga", "description": "Отправиться в Тортугу"},
+        {"type": "talk_to", "target": "fortune_teller", "description": "Поговорить с гадалкой Зарой"}
+      ],
+      "rewards": {"gold": 150, "xp": 75},
+      "next_chapter": 4,
+      "choices": {
+        "join_pirates": {"description": "Присоединиться к пиратам", "faction_change": "black_flag", "next": 4},
+        "stay_loyal": {"description": "Остаться верным короне", "next": 5}
+      }
+    },
+    {
+      "chapter": 4,
+      "title": "Путь пирата",
+      "description": "Капитан Бонс принимает вас в ряды Чёрного Флага. Первое задание — ограбить торговый корабль.",
+      "objectives": [
+        {"type": "battle", "target": "merchant_ship", "description": "Ограбить торговый корабль"},
+        {"type": "return_to", "target": "tortuga", "description": "Вернуться в Тортугу"}
+      ],
+      "rewards": {"gold": 500, "xp": 200, "reputation": {"black_flag": 100}},
+      "next_chapter": 6
+    },
+    {
+      "chapter": 5,
+      "title": "На службе короны",
+      "description": "Губернатор поручает вам перехватить пиратские корабли у Острова Черепа.",
+      "objectives": [
+        {"type": "visit", "target": "skull_island", "description": "Отправиться к Острову Черепа"},
+        {"type": "battle", "target": "pirate_ship", "description": "Уничтожить пиратский корабль"}
+      ],
+      "rewards": {"gold": 400, "xp": 200, "reputation": {"royal_navy": 100}},
+      "next_chapter": 6
+    },
+    {
+      "chapter": 6,
+      "title": "Голос из глубин",
+      "description": "Медальон начинает светиться и указывает на Риф Мертвеца. Что-то зовёт вас из глубин.",
+      "objectives": [
+        {"type": "visit", "target": "dead_mans_reef", "description": "Исследовать Риф Мертвеца"},
+        {"type": "kill", "target": "drowned_sailor", "count": 10, "description": "Победить 10 утопленников"}
+      ],
+      "rewards": {"gold": 300, "xp": 250},
+      "next_chapter": 7
+    },
+    {
+      "chapter": 7,
+      "title": "Призрачный Капитан",
+      "description": "На Рифе Мертвеца вы находите призрака, который знает историю медальона.",
+      "objectives": [
+        {"type": "visit", "target": "ghost_island", "description": "Отправиться на Остров Призраков"},
+        {"type": "talk_to", "target": "spectral_captain", "description": "Поговорить с Призрачным Капитаном"}
+      ],
+      "rewards": {"gold": 400, "xp": 300, "items": ["skeleton_key"]},
+      "next_chapter": 8
+    },
+    {
+      "chapter": 8,
+      "title": "Древние знания",
+      "description": "Медальон связан с древней цивилизацией. Вам нужно найти Древние Руины.",
+      "objectives": [
+        {"type": "visit", "target": "ancient_ruins", "description": "Найти Древние Руины"},
+        {"type": "kill", "target": "stone_golem", "count": 5, "description": "Победить 5 каменных големов"},
+        {"type": "collect", "target": "magic_crystal", "count": 3, "description": "Собрать 3 магических кристалла"}
+      ],
+      "rewards": {"gold": 500, "xp": 400},
+      "next_chapter": 9
+    },
+    {
+      "chapter": 9,
+      "title": "Шёпот Бездны",
+      "description": "Вы узнаёте, что медальон — ключ к пробуждению Кракена. Культ Кракена охотится за вами.",
+      "objectives": [
+        {"type": "kill", "target": "cultist", "count": 8, "description": "Победить 8 культистов"},
+        {"type": "visit", "target": "coral_citadel", "description": "Обратиться к Стражам Моря"}
+      ],
+      "rewards": {"gold": 600, "xp": 500, "reputation": {"sea_guardians": 200}},
+      "next_chapter": 10
+    },
+    {
+      "chapter": 10,
+      "title": "Подготовка к шторму",
+      "description": "Лорд Тритон предупреждает: Кракен пробуждается. Нужно собрать флот и союзников.",
+      "objectives": [
+        {"type": "reach_level", "target": 25, "description": "Достигните 25 уровня"},
+        {"type": "fleet_size", "target": 3, "description": "Соберите флот из 3 кораблей"}
+      ],
+      "rewards": {"gold": 1000, "xp": 800, "items": ["golden_blade"]},
+      "next_chapter": 11
+    }
+  ],
+  "faction_quests": {
+    "royal_navy": [
+      {"id": "rn_patrol", "name": "Патрулирование вод", "description": "Патрулируйте торговые маршруты и уничтожьте 3 пиратских корабля.", "objectives": [{"type": "kill", "target": "pirate_ship", "count": 3}], "rewards": {"gold": 300, "xp": 150, "reputation": {"royal_navy": 50}}, "level_req": 5, "repeatable": true},
+      {"id": "rn_escort", "name": "Сопровождение каравана", "description": "Защитите торговый караван на пути в Гавану.", "objectives": [{"type": "escort", "from": "port_royal", "to": "havana"}], "rewards": {"gold": 500, "xp": 200, "reputation": {"royal_navy": 75}}, "level_req": 10, "repeatable": true},
+      {"id": "rn_spy", "name": "Шпион в Тортуге", "description": "Проникните в Тортугу и добудьте разведданные.", "objectives": [{"type": "visit", "target": "tortuga"}, {"type": "collect", "target": "intel_scroll", "count": 1}], "rewards": {"gold": 800, "xp": 400, "reputation": {"royal_navy": 100}}, "level_req": 15, "repeatable": false}
+    ],
+    "black_flag": [
+      {"id": "bf_raid", "name": "Набег на торговцев", "description": "Ограбьте 3 торговых судна.", "objectives": [{"type": "kill", "target": "merchant_ship", "count": 3}], "rewards": {"gold": 400, "xp": 150, "reputation": {"black_flag": 50}}, "level_req": 5, "repeatable": true},
+      {"id": "bf_treasure", "name": "Поиск клада", "description": "Найдите спрятанный клад на Острове Черепа.", "objectives": [{"type": "visit", "target": "skull_island"}, {"type": "collect", "target": "treasure_chest", "count": 1}], "rewards": {"gold": 600, "xp": 200, "reputation": {"black_flag": 75}}, "level_req": 8, "repeatable": true},
+      {"id": "bf_blockade", "name": "Блокада Порт-Ройала", "description": "Установите блокаду Порт-Ройала.", "objectives": [{"type": "battle", "target": "navy_patrol", "count": 5}], "rewards": {"gold": 1000, "xp": 500, "reputation": {"black_flag": 150}}, "level_req": 20, "repeatable": false}
+    ],
+    "merchant_guild": [
+      {"id": "mg_delivery", "name": "Доставка товаров", "description": "Доставьте груз пряностей из Островов Пряностей в Гавану.", "objectives": [{"type": "deliver", "item": "spices", "from": "spice_islands", "to": "havana"}], "rewards": {"gold": 400, "xp": 150, "reputation": {"merchant_guild": 50}}, "level_req": 5, "repeatable": true},
+      {"id": "mg_appraise", "name": "Оценка товаров", "description": "Оцените 5 предметов у Оценщицы Луны.", "objectives": [{"type": "talk_to", "target": "appraiser_luna", "count": 5}], "rewards": {"gold": 200, "xp": 100, "reputation": {"merchant_guild": 30}}, "level_req": 3, "repeatable": true}
+    ]
+  },
+  "daily_quest_pool": [
+    {"id": "daily_hunt", "name": "Охота на монстров", "description": "Победите 10 любых монстров.", "objectives": [{"type": "kill_any", "count": 10}], "rewards": {"gold": 100, "xp": 75}},
+    {"id": "daily_gather", "name": "Сбор ресурсов", "description": "Соберите 5 любых ресурсов.", "objectives": [{"type": "gather_any", "count": 5}], "rewards": {"gold": 80, "xp": 50}},
+    {"id": "daily_craft", "name": "Ремесло дня", "description": "Создайте 2 любых предмета.", "objectives": [{"type": "craft_any", "count": 2}], "rewards": {"gold": 120, "xp": 60}},
+    {"id": "daily_trade", "name": "Торговый день", "description": "Совершите 3 сделки на аукционе.", "objectives": [{"type": "trade", "count": 3}], "rewards": {"gold": 150, "xp": 80}},
+    {"id": "daily_explore", "name": "Исследование", "description": "Посетите 3 разных острова.", "objectives": [{"type": "visit_any", "count": 3}], "rewards": {"gold": 100, "xp": 100}},
+    {"id": "daily_pvp", "name": "Арена", "description": "Участвуйте в 2 PVP-боях.", "objectives": [{"type": "pvp", "count": 2}], "rewards": {"gold": 200, "xp": 120}},
+    {"id": "daily_fish", "name": "Рыбалка", "description": "Поймайте 5 рыб.", "objectives": [{"type": "fish", "count": 5}], "rewards": {"gold": 80, "xp": 40}},
+    {"id": "daily_boss", "name": "Охота на босса", "description": "Победите любого босса.", "objectives": [{"type": "kill_boss", "count": 1}], "rewards": {"gold": 300, "xp": 200}}
+  ]
+}

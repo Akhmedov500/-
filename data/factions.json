@@ -1,0 +1,192 @@
+{
+  "royal_navy": {
+    "name": "Королевский Флот",
+    "description": "Защитники закона и порядка на морях. Служат короне и поддерживают торговые пути.",
+    "emoji": "⚓",
+    "color": "blue",
+    "base_island": "port_royal",
+    "bonuses": {"defense": 10, "trade_discount": 0.1},
+    "enemies": ["black_flag", "shadow_fleet"],
+    "allies": ["merchant_guild"],
+    "ranks": [
+      {"name": "Юнга", "rep": 0},
+      {"name": "Матрос", "rep": 100},
+      {"name": "Боцман", "rep": 500},
+      {"name": "Лейтенант", "rep": 1500},
+      {"name": "Капитан", "rep": 3000},
+      {"name": "Коммодор", "rep": 6000},
+      {"name": "Адмирал", "rep": 10000}
+    ]
+  },
+  "black_flag": {
+    "name": "Чёрный Флаг",
+    "description": "Пиратское братство. Свобода, добыча и никаких правил!",
+    "emoji": "🏴‍☠️",
+    "color": "black",
+    "base_island": "tortuga",
+    "bonuses": {"attack": 10, "loot_bonus": 0.15},
+    "enemies": ["royal_navy", "merchant_guild"],
+    "allies": ["shadow_fleet"],
+    "ranks": [
+      {"name": "Салага", "rep": 0},
+      {"name": "Пират", "rep": 100},
+      {"name": "Головорез", "rep": 500},
+      {"name": "Капер", "rep": 1500},
+      {"name": "Капитан", "rep": 3000},
+      {"name": "Пиратский Лорд", "rep": 6000},
+      {"name": "Король Пиратов", "rep": 10000}
+    ]
+  },
+  "merchant_guild": {
+    "name": "Торговая Гильдия",
+    "description": "Купцы и торговцы, контролирующие экономику островов.",
+    "emoji": "💰",
+    "color": "gold",
+    "base_island": "havana",
+    "bonuses": {"gold_bonus": 0.2, "cargo_capacity": 20},
+    "enemies": ["black_flag"],
+    "allies": ["royal_navy", "island_federation"],
+    "ranks": [
+      {"name": "Подмастерье", "rep": 0},
+      {"name": "Торговец", "rep": 100},
+      {"name": "Купец", "rep": 500},
+      {"name": "Негоциант", "rep": 1500},
+      {"name": "Магнат", "rep": 3000},
+      {"name": "Гильдмастер", "rep": 6000},
+      {"name": "Торговый Лорд", "rep": 10000}
+    ]
+  },
+  "shadow_fleet": {
+    "name": "Теневой Флот",
+    "description": "Тайное общество контрабандистов и шпионов.",
+    "emoji": "🌑",
+    "color": "purple",
+    "base_island": "shadow_cove",
+    "bonuses": {"speed": 10, "smuggling_bonus": 0.2},
+    "enemies": ["royal_navy"],
+    "allies": ["black_flag", "voodoo_order"],
+    "ranks": [
+      {"name": "Тень", "rep": 0},
+      {"name": "Агент", "rep": 100},
+      {"name": "Шпион", "rep": 500},
+      {"name": "Мастер теней", "rep": 1500},
+      {"name": "Теневой капитан", "rep": 3000},
+      {"name": "Архитень", "rep": 6000},
+      {"name": "Владыка Тьмы", "rep": 10000}
+    ]
+  },
+  "voodoo_order": {
+    "name": "Орден Вуду",
+    "description": "Мистики и шаманы, владеющие тёмной магией островов.",
+    "emoji": "🔮",
+    "color": "green",
+    "base_island": "voodoo_isle",
+    "bonuses": {"luck": 10, "alchemy_bonus": 0.2},
+    "enemies": ["sea_guardians"],
+    "allies": ["shadow_fleet"],
+    "ranks": [
+      {"name": "Послушник", "rep": 0},
+      {"name": "Ученик", "rep": 100},
+      {"name": "Адепт", "rep": 500},
+      {"name": "Шаман", "rep": 1500},
+      {"name": "Жрец", "rep": 3000},
+      {"name": "Верховный жрец", "rep": 6000},
+      {"name": "Великий Бокор", "rep": 10000}
+    ]
+  },
+  "sea_guardians": {
+    "name": "Стражи Моря",
+    "description": "Древний орден, защищающий океан от зла и хаоса.",
+    "emoji": "🐚",
+    "color": "cyan",
+    "base_island": "coral_citadel",
+    "bonuses": {"max_health": 20, "ship_repair_bonus": 0.15},
+    "enemies": ["voodoo_order", "kraken_cult"],
+    "allies": ["island_federation"],
+    "ranks": [
+      {"name": "Волна", "rep": 0},
+      {"name": "Прибой", "rep": 100},
+      {"name": "Страж", "rep": 500},
+      {"name": "Хранитель", "rep": 1500},
+      {"name": "Рыцарь Моря", "rep": 3000},
+      {"name": "Лорд Приливов", "rep": 6000},
+      {"name": "Владыка Океана", "rep": 10000}
+    ]
+  },
+  "island_federation": {
+    "name": "Островная Федерация",
+    "description": "Союз свободных островов, стремящихся к миру и процветанию.",
+    "emoji": "🏝️",
+    "color": "orange",
+    "base_island": "nassau",
+    "bonuses": {"defense": 5, "reputation_bonus": 0.1},
+    "enemies": ["kraken_cult"],
+    "allies": ["merchant_guild", "sea_guardians"],
+    "ranks": [
+      {"name": "Житель", "rep": 0},
+      {"name": "Гражданин", "rep": 100},
+      {"name": "Советник", "rep": 500},
+      {"name": "Сенатор", "rep": 1500},
+      {"name": "Губернатор", "rep": 3000},
+      {"name": "Канцлер", "rep": 6000},
+      {"name": "Верховный Правитель", "rep": 10000}
+    ]
+  },
+  "kraken_cult": {
+    "name": "Культ Кракена",
+    "description": "Фанатики, поклоняющиеся чудовищам глубин.",
+    "emoji": "🐙",
+    "color": "dark_red",
+    "base_island": "abyss_island",
+    "bonuses": {"attack": 15, "pve_damage": 0.15},
+    "enemies": ["sea_guardians", "island_federation"],
+    "allies": [],
+    "ranks": [
+      {"name": "Верующий", "rep": 0},
+      {"name": "Фанатик", "rep": 100},
+      {"name": "Жертвователь", "rep": 500},
+      {"name": "Щупальце", "rep": 1500},
+      {"name": "Голос Бездны", "rep": 3000},
+      {"name": "Пророк Кракена", "rep": 6000},
+      {"name": "Аватар Кракена", "rep": 10000}
+    ]
+  },
+  "ghost_armada": {
+    "name": "Призрачная Армада",
+    "description": "Флот проклятых душ, навечно скитающихся по морям.",
+    "emoji": "👻",
+    "color": "grey",
+    "base_island": "ghost_island",
+    "bonuses": {"speed": 15, "dodge_chance": 0.1},
+    "enemies": [],
+    "allies": ["voodoo_order"],
+    "ranks": [
+      {"name": "Скиталец", "rep": 0},
+      {"name": "Неупокоенный", "rep": 100},
+      {"name": "Призрак", "rep": 500},
+      {"name": "Привидение", "rep": 1500},
+      {"name": "Капитан-призрак", "rep": 3000},
+      {"name": "Лорд Мертвецов", "rep": 6000},
+      {"name": "Летучий Голландец", "rep": 10000}
+    ]
+  },
+  "treasure_hunters": {
+    "name": "Охотники за Сокровищами",
+    "description": "Искатели приключений, исследующие руины и затонувшие корабли.",
+    "emoji": "🗺️",
+    "color": "brown",
+    "base_island": "explorers_haven",
+    "bonuses": {"luck": 15, "treasure_find": 0.2},
+    "enemies": [],
+    "allies": ["merchant_guild"],
+    "ranks": [
+      {"name": "Новичок", "rep": 0},
+      {"name": "Искатель", "rep": 100},
+      {"name": "Следопыт", "rep": 500},
+      {"name": "Охотник", "rep": 1500},
+      {"name": "Мастер-искатель", "rep": 3000},
+      {"name": "Легендарный охотник", "rep": 6000},
+      {"name": "Величайший Искатель", "rep": 10000}
+    ]
+  }
+}
